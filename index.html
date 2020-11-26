@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    .tab-content{
+        width:100%;
+        height: 100%;
+    }
+    .tab-pane{
+        width:100%;
+        height: 100%;
+        padding: 15px;
+    }
+    #homeImg{ 
+        width:100%;
+        height: 100%;
+        /* 背景图 */
+        background:url(assets/homeImg.png) no-repeat center; 
+        background-size: 100%;
+         
+    }
+    .row{
+        width: 100%;
+        height: 100%;
+    }
+    .homeText{
+        /* 字体大小 */
+        font-size: 60px;
+        /* 字体颜色 */
+        color: rgb(248, 231, 207);
+        /* 字体加粗 */
+        font-weight: 700;
+    }
+    .homeBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    .myphoto{
+        width: 50%;
+    }
+    .botton{
+        height: 100px;
+    }
+    .bottonBox{
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid rgb(146, 141, 141);
+        border-radius: 10px;
+        text-align: center;
+        line-height: 100%;
+    }
+    #Map img{
+        width: 100%;
+        margin: 15px;
+    }
+    #Art img{
+        width: 100%;
+        height: 340px;
+        margin: 15px;
+    }
+</style>
+<body>
+    <ul class="nav nav-tabs" style="height:42px">
+        <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
+        <li><a href="#About" data-toggle="tab">About</a></li>
+        <li><a href="#Map" data-toggle="tab">Map</a></li>
+        <li><a href="#Art" data-toggle="tab">Art</a></li>
+        <li><a href="#CV" data-toggle="tab">CV</a></li>
+        <!-- 你的名字 -->
+        <div style="float: right; font-size: 16px;height: 100%;width:auto;line-height:42px;padding-right:20px;">Jin Du</div> 
+  </ul>
+  <div class="tab-content">
+      <!-- 主页内容 -->
+    <div class="tab-pane active" id="Home" style="padding: 0px;">
+        <div class="row" style="padding: 0px;margin: 0px;">
+            <div class="col-md-3 col-xs-12 col-sm-6" id="homeImg">
+                <div class="homeBox">
+                    <div class="homeText">Welcome! I'm Jin Du</div>
+                    <div class="homeText">Map and Life</div>
+                    <div class="homeText">Vitam Honestam</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- about内容 -->
+    <div class="tab-pane" id="About">
+        <div class="row" style="height: auto;">
+            <div class="col-md-6 col-xs-12 col-sm-12" style="padding: 10px;">
+                <!-- 标题 -->
+                <div></div>
+                <h3>Jin Du</h3>
+                <!-- 文字内容 -->
+                <p>Jin is current student in University of Wisconsin - Madison, MS in GIS and Cartography. She got her BA from Miami University, majored in geography and French minor. Out of school, she is a photographer, cat lover, and skate lover. </p>
+                <!-- 文字 -->
+                <p>Contact: dujin0110@gamil.com</p>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12" style="display: flex;justify-content: center;">
+                <!-- 图片，src是图片地址，图片放入assets文件夹里，地址为asset/图片全名 -->
+                <img src="assets/dujin.jpg" class="myphoto">
+            </div>
+        </div>
+        <div class="row botton" style="padding-top: 30px;">
+            <div class="col-xs-6 col-sm-4">
+                <div class="bottonBox">Linkedin : Jin Du</div>
+                    
+                
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="bottonBox">Email : jdu69@wisc.edu</div>
+                     
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="bottonBox">Phone</div> 
+
+            </div>
+        </div>
+    </div>
+    <!-- 地图内容 -->
+    <div class="tab-pane" id="Map">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-6">
+                <!-- 图片，src是图片地址，图片放入assets的map文件夹里，地址为asset/map/图片全名 -->
+
+                <a href="map.html"><img src="assets/map/geog 572 lab1.JPG" alt=""></a>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-6">
+                <a href="map572 lat2.html"><img src="assets/map/geog 572 lab2.JPG" alt=""></a>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-6">
+                <img src="assets/map/370 final project.jpg" alt="">
+
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-6">
+                <img src="assets/map/370_lab 3_Jin Du-1.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-6">
+                <img src="assets/map/370_lab 4_JinDu-1.jpg" alt="">
+
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-6">
+                <img src="assets/map/370_Lab2_JinDu_2 (1)-1.jpg" alt="">
+
+
+            </div>
+        </div>
+    </div>
+    <!-- 照片 -->
+    <div class="tab-pane" id="Art">
+        <div class="row">
+                <div class="col-md-4 col-xs-12 col-sm-6">
+                    <img src="assets/photo/_20201102224916.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6">
+                    <img src="assets/photo/_20201102225006.jpg" alt="">
+    
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6">
+                    <img src="assets/photo/_20201125201424.jpg" alt="">
+    
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6">
+                    <img src="assets/photo/_20201125201446.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6">
+                    <img src="assets/photo/_20201125201456.jpg" alt="">
+    
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-6">
+                    <img src="assets/photo/_20201102230107.jpg" alt="">
+    
+                </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="CV">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12" style="display: flex; justify-content: center;">
+                <img src="assets/CV.jpg" alt="" style="width: 70%;">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    
+
+</script>
